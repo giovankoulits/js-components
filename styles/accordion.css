@@ -1,0 +1,50 @@
+.my-accordion {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 10vh;
+}
+
+.my-accordion-item-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  border-bottom: 1px solid white;
+}
+
+.my-accordion-item-title:hover {
+  cursor: pointer;
+}
+
+.my-accordion-item-title .svg {
+  height: 30px;
+  width: 30px;
+  transition: 500ms ease;
+}
+
+.my-accordion-item-title.active .svg {
+  transform: rotateX(180deg);
+}
+
+.my-accordion-item-title .svg::selection {
+  color: red;
+}
+
+.my-accordion-item-body {
+  max-height: 0px;
+  overflow: hidden;
+  transition: 500ms ease;
+  background-color: white;
+  color: black;
+}
+.my-accordion-item-body p {
+  padding: 20px;
+}
+
+.my-accordion-item-title:last-of-type {
+  border-bottom: 1px solid red;
+}
