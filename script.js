@@ -1,5 +1,27 @@
 //Navbar
 
+const hamburger = document.querySelector(".hamburger-btn");
+const navLinks = document.querySelector(".nav-links");
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 991) {
+    navLinks.classList.remove("clicked");
+    navLinks.classList.remove("closed");
+    hamburger.classList.remove("clicked");
+  }
+});
+
+hamburger.addEventListener("click", (e) => {
+  hamburger.classList.toggle("clicked");
+  if (navLinks.classList.contains("clicked")) {
+    navLinks.classList.remove("clicked");
+    navLinks.classList.add("closed");
+  } else {
+    navLinks.classList.remove("closed");
+    navLinks.classList.add("clicked");
+  }
+});
+
 //Accordion
 
 const accordionTitles = document.querySelectorAll(".my-accordion-item-title");

@@ -2,7 +2,6 @@
   border-top: 1px solid white;
   border-left: 1px solid white;
   border-right: 1px solid white;
-  margin-top: 10vh;
 }
 
 .my-accordion-item-title {
@@ -10,7 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 20px;
   color: white;
   font-size: 30px;
   border-bottom: 1px solid white;
@@ -47,4 +46,11 @@
 
 .my-accordion-item-title:last-of-type {
   border-bottom: 1px solid red;
+}
+
+@media (max-width: 1280px) {
+  .my-accordion {
+    border-left: 0px;
+    border-right: 0px;
+  }
 }
