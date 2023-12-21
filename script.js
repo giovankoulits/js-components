@@ -1,13 +1,22 @@
+document.querySelector("fieldset").addEventListener("change", () => {
+  alert("hi");
+});
+
 //Navbar
 
 const hamburger = document.querySelector(".hamburger-btn");
 const navLinks = document.querySelector(".nav-links");
+const navHeight = document.querySelector(".my-navbar").scrollHeight;
 
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 991) {
     navLinks.classList.remove("clicked");
     navLinks.classList.remove("closed");
     hamburger.classList.remove("clicked");
+  } else {
+    const container = document.querySelector(".container .my-navbar");
+    const containerPadding = container.style.paddingTop;
+    console.log(containerPadding);
   }
 });
 

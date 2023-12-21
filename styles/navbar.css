@@ -3,6 +3,11 @@
   display: flex;
   justify-content: center;
   background-color: white;
+  padding: 0px 20px;
+}
+
+#navbar-wrapper .container {
+  padding: 0px;
 }
 
 .my-navbar {
@@ -47,6 +52,7 @@
   align-items: center;
   justify-content: center;
   display: none;
+  margin-left: 15px;
 }
 
 .hamburger-btn:hover,
@@ -58,7 +64,7 @@
   width: 30px;
   height: 4px;
   border-radius: 3px;
-  background-color: #000;
+  background-color: #cf33c2;
   position: absolute;
   border-radius: 3px;
 }
@@ -69,7 +75,7 @@
   width: 30px;
   height: 4px;
   border-radius: 3px;
-  background-color: #000;
+  background-color: #cf33c2;
   content: "";
 }
 
@@ -125,7 +131,7 @@ a:after {
   height: 2px;
   left: 0%;
   position: absolute;
-  background: #000;
+  background: #cf33c2;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -151,7 +157,7 @@ a:hover:after {
     position: absolute;
     transform: translateX(-100vw);
     padding: 30px 0px;
-    border-top: 1px solid black;
+    border-top: 1px solid #cf33c2;
   }
 
   .nav-links.clicked {

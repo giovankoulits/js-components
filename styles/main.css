@@ -1,16 +1,36 @@
 :root {
   font-size: 18px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
+  font-family: "PF Bague Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #a7d32f;
   justify-content: center;
   font-size: 62.5%;
-  --nav-height: 90px;
+  --nav-height: 70px;
+  --container-padding: 20px;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+@font-face {
+  font-family: "PF Bague Sans Pro";
+  src: url("../assets/fonts/PFBagueSansPro-Medium.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PF Bague Sans Pro";
+  src: url("../assets/fonts/PFBagueSansPro-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "PF Bague Sans Pro";
+  src: url("../assets/fonts/PFBagueSansPro-Light.ttf");
+  font-weight: 300;
 }
 
 body {
   padding: 0px;
   margin: 0px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,20 +39,37 @@ body {
 }
 
 .container {
-  padding: 10px 0px;
+  padding: var(--container-padding);
   margin: 0px;
   max-width: 1280px;
   width: 100%;
 }
 
+.svg-container {
+  height: 220px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
 h1 {
   font-size: 3rem;
   margin: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-p,
+h2 {
+  font-weight: normal;
+}
+
 a {
   font-size: 1.8rem;
-  margin: 0px;
   line-height: 1.8rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 300;
 }
